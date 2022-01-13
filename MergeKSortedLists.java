@@ -32,7 +32,7 @@ class MergeKSortedLists {
         
         while (!q.isEmpty()) {
             ListNode tmp = (ListNode)q.poll();
-            retTail.next = tmp;
+            retTail.next = tmp; 
             if (tmp.next != null) q.add(tmp.next);
             retTail = tmp;
         }
